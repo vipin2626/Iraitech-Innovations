@@ -1,0 +1,7 @@
+<div class="input-group mb-3">
+    <input type="number" class="form-control" #index placeholder="Enter index whose digit want to know in the series"/>
+    <div class="input-group-append">
+      <button class="btn btn-outline-secondary" type="button" (click)="getTheNumber(index.value)">Get the number</button>
+    </div>
+  </div>
+  <div *ngIf="value_at_index > 0" class="text text-lg text-success text-center" [innerText]="value_at_index"></div>
